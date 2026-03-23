@@ -2889,6 +2889,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 			local decomp = construct_TimeoutHandler(Timeout, Decompiler, "Decompiler timed out")
 
 			ldecompile = function(script)
+				task.wait(.6)
 				-- local name = scr.ClassName .. scr.Name
 				local bytecode
 				if ScriptCache then
